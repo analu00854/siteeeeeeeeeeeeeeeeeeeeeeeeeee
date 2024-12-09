@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site ana linda</title>
+    <style>
+        /* Reset básico */
+        body, h1, h2, p, ul, li, a, img {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #35393c;
+            background-color: #f9f9f9;
+        }
+        /* Cabeçalho */
+        header {
+            background: #94c4ec;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .hero .image-container {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        .hero .image-container img {
+            width: 100%;
+            transition: transform 0.5s ease-in-out; /* Transição suave */
+        }
+        .hero .image-container:hover img {
+            transform: translateY(-50px); /* Move a imagem para cima ao passar o mouse */
+        }
+        .hero h1 {
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            color: #000000;
+        }
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #1e2429;
+        }
+        /* Seções */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Vídeo */
+        .video-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 1rem;
+        }
+        .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.grid img {
+    width: 98%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.grid img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+body {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+.carrossel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.item {
+  flex: 0 0 300px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+.item img {
+  max-width: 100%; /* Faz a imagem ocupar no máximo 100% do contêiner */
+  height: auto; /* Mantém a proporção original da imagem */
+  max-height: 200px; /* Define um limite para a altura (ajuste conforme necessário) */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+  object-fit: cover; /* Ajusta o corte da imagem para cobrir o contêiner, se necessário */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="image-container">
+            <img src="imagem1.png" alt="Imagem Principal">
+        </div>
+        <h1>INTELIGENCIA ARTIFICIAL 
+        </h1>
+        <p> A Inteligência Artificial (IA) é uma tecnologia que permite a criação de sistemas capazes de realizar tarefas que imitam a inteligência humana, como aprendizado, tomada de decisões e análise de dados. Está presente em áreas como assistentes virtuais, diagnósticos médicos, veículos autônomos e agricultura. Com avanços como o aprendizado de máquina, a IA traz inúmeros benefícios, como aumento de eficiência e soluções inovadoras. No entanto, também levanta desafios éticos, como impacto no emprego e privacidade. Seu desenvolvimento requer uso responsável para garantir que contribua para uma sociedade mais justa e eficiente. A Inteligência Artificial (IA) transformará profundamente a sociedade, tornando-se mais autônoma e integrada ao cotidiano. No futuro, ela revolucionará áreas como saúde, com diagnósticos e tratamentos personalizados, e educação, com tutores virtuais adaptáveis. Cidades inteligentes e robôs explorando o espaço também se tornarão realidade. No trabalho, a IA atuará como parceira dos humanos, criando novas profissões.
+            Apesar dos avanços, desafios éticos, como privacidade, desigualdade e decisões justas, precisarão ser enfrentados. Com uso responsável, a IA será uma ferramenta poderosa para resolver problemas globais e melhorar a qualidade de vida.</p>
+     <div> 
+        <section id="Sobre">
+            <h2></h2>
+            <p class="fade-in"></p>
+        </section>
+    </div>
+    </section>
+    <section id="galeria">
+        <<div class="carrossel">
+            <div class="item">
+              <img src="1.jpg" alt="imagem1">
+              
+            </div>
+            <div class="item">
+              <img src="2.jpg" alt="imagem2">
+        
+            </div>
+            <div class="item">
+              <img src="3.jpg" alt="imagem3">
+            
+            </div>
+          </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Carrossel de Textos</title>
+      <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+    </head>
+    <body>
+      <div class="carrossel">
+        <div class="item">A inteligência artificial é a capacidade de máquinas realizarem tarefas que normalmente exigem inteligência humana, como aprender, raciocinar e resolver problemas. Ela está presente em assistentes virtuais, recomendações de produtos e mais.</div>
+        <div class="item">A IA está automatizando tarefas repetitivas, tornando os processos mais rápidos e eficientes. Porém, ela também exige que os profissionais adquiram novas habilidades para colaborar com as máquinas.</div>
+        <div class="item">Embora a IA traga muitas vantagens, ela também apresenta desafios, como questões de privacidade e segurança. O uso responsável e ético da tecnologia é fundamental para seu desenvolvimento.</div>
+      </div>
+    </body>
+    </html>
+    <section id="sobre">
+        
+        <h2>Curiosidades sobre (IA)</h2>
+        <p> Origem e avanços: O termo “inteligência artificial” surgiu na década de 1950. Sistemas como Deep Blue derrotaram campeões mundiais no xadrez.
+            Comunicação autônoma: IA demonstrou capacidade de se comunicar por meio de linguagens próprias, como os bots do Facebook.
+            Aplicações diárias: IA está presente em recomendações de conteúdo, segurança e assistentes virtuais.
+            Impacto na saúde: IA ajuda na detecção precoce de doenças e no desenvolvimento de medicamentos.
+            Interação com emoções: Algumas IA reconhecem emoções humanas, mas sem ter sentimentos próprios.
+        
+        A IA continua a transformar diversos setores e a sociedade como um todo.</p>
+    </section>
+    <section id="video" class="video-container">
+        <h2>Confira o video abaixo </h2>
+        <p>Neste video você vai se  diverti com a Robô Sophia e Jimmy, brincando de pedra, tesoura, papel, ao estilo Robô, quando de forma inesperada a Robô Sophia diz que tem o plano perfeito para dominar a humanidade..:</p>
+        <iframe src="https://youtu.be/vvIw36eqZ-s?si=ITaiG1W6sB4tzqSL"></iframe>
+    </section>
+    <footer>
+        <p>&copy; site ana linda 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
